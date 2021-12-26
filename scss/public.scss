@@ -25,12 +25,12 @@ body {
   min-height: 810px;
   margin:0;
   padding:0;
-  background: #000 url(../img/banner.png) center right fixed no-repeat;
+  background: #000 url(../img/banner.png) center right no-repeat;
   -moz-background-size: cover;
   background-size: cover;
 
   @include range-width(0, 450px) {
-    background: #000 url(../img/mobile_bg.png) center center fixed no-repeat;
+    background: #000 url(../img/mobile_bg.png) center center  no-repeat;
   }
 }
 
@@ -43,11 +43,41 @@ body {
   margin: 0 auto;
   max-width: 940px;
 
-  background-color: rgba(255, 0, 0, 0.2);
+  // background-color: rgba(255, 0, 0, 0.2);
 }
 
 .t-pt105 {
-  padding: 105px 0;
+  padding: 10% 0;
+}
+
+.w-25, .w-75 {
+  @include range-width(0, 450px) {
+    width: 100% !important;
+  }
+}
+
+.h500 {
+  height: 500px;
+
+  @include range-width(376px, 450px) {
+    height: 690px;
+  }
+
+  @include range-width(0, 376px) {
+    height: 600px;
+  }
+}
+
+.bar {
+  display: inline-block;
+  width: 100px;
+  height: 3px;
+  background-color: #7C31DF;
+  margin-bottom: 20px;
+}
+
+.t-mt80 {
+  margin-top: 80px;
 }
 
 footer {
@@ -55,6 +85,10 @@ footer {
   width: 100%;
   padding: 25px 0;
   border-top: 5px solid #D71E21;
+
+  @include range-width(0, 450px) {
+    padding: 15px;
+  }
 
   .f-img01 {
     display: inline-block;
