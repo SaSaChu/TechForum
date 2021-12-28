@@ -45,7 +45,8 @@
   &.disabled,
   fieldset:disabled & {
     pointer-events: none;
-    opacity: $btn-disabled-opacity;
+    // opacity: $btn-disabled-opacity;
+    opacity: unset;
     @include box-shadow(none);
   }
 }
@@ -91,7 +92,8 @@
 
   &:disabled,
   &.disabled {
-    color: $btn-link-disabled-color;
+    // color: $btn-link-disabled-color;
+    color: white;
   }
 
   // No need for an active state here
