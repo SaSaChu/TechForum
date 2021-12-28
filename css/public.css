@@ -3036,7 +3036,7 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 .t-mt80 { margin-top: 80px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .t-mt80 { margin-top: 50px; } }
 
-footer { display: inline-block; width: 100%; padding: 25px 0; border-top: 5px solid #D71E21; }
+footer { display: inline-block; width: 100%; padding: 25px 0; border-top: 5px solid #D71E21; border-image: linear-gradient(to right, #1c547b 0%, #bb313a 100%); border-image-slice: 1; }
 @media screen and (max-width: 449px) and (min-width: 0) { footer { padding: 15px; } }
 footer .f-img01 { display: inline-block; width: 100%; max-width: 115px; padding-top: 7px; }
 footer .f-img02 { display: inline-block; width: 100%; max-width: 200px; }

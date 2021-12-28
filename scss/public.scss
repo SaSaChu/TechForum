@@ -103,6 +103,8 @@ footer {
   width: 100%;
   padding: 25px 0;
   border-top: 5px solid #D71E21;
+  border-image: linear-gradient(to right, rgba(28, 84, 123, 1.00) 0%, rgba(187, 49, 58, 1.00) 100%);
+  border-image-slice: 1;
 
   @include range-width(0, 450px) {
     padding: 15px;
