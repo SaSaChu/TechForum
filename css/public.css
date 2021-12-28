@@ -3009,7 +3009,7 @@ textarea.form-control-lg { min-height: calc(1.5em + (1rem + 2px)); }
   .d-print-none { display: none !important; } }
 html { font-size: 16px; height: 100%; }
 
-body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: black; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
+body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: black; font-family: 'Ubuntu', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
 .kv-boxs { display: inline-block; width: 100%; min-height: 810px; margin: 0; padding: 0; background: #000 url(../img/banner.png) center right no-repeat; -moz-background-size: cover; background-size: cover; }
 @media screen and (max-width: 449px) and (min-width: 0) { .kv-boxs { background: #000 url(../img/mobile_bg.png) center 33px no-repeat; -moz-background-size: contain; background-size: contain; } }
