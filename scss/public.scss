@@ -65,6 +65,13 @@ body {
   }
 }
 
+.t-pt4 {
+
+  @include range-width(0, 450px) {
+    padding-top: 16%;
+  }
+}
+
 .w-25, .w-75 {
   @include range-width(0, 450px) {
     width: 100% !important;
@@ -114,20 +121,23 @@ footer {
   .f-img01 {
     display: inline-block;
     width: 100%;
-    max-width: 115px;
+    max-width: 113px;
     padding-top: 7px;
+    margin-right: 15px;
   }
 
   .f-img02 {
     display: inline-block;
     width: 100%;
     max-width: 200px;
+    padding-top: 3px;
   }
 
   .f-img03 {
     display: inline-block;
     width: 100%;
-    max-width: 125px;
+    max-width: 113px;
+    padding-top: 7px;
   }
 }
 
