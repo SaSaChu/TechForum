@@ -37,6 +37,19 @@ body {
   }
 }
 
+.boxs4 {
+  display: inline-block;
+  width: calc(100% / 4);
+  border: 1px solid rgba(255, 0, 0, .3);
+  height: 300px;
+  float: left;
+} 
+
+.bg-color-grey {
+  background-color: #F4F4F4;
+}
+
+
 .text01 {
   border: 1px solid rgba(255, 0, 0, .3);
 }
