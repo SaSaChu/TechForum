@@ -12,17 +12,20 @@
 }
 
 .nav-link {
-  display: block;
+  // display: block;
+  display: inline-block;
   padding: $nav-link-padding-y $nav-link-padding-x;
   @include font-size($nav-link-font-size);
   font-weight: $nav-link-font-weight;
-  color: $nav-link-color;
+  // color: $nav-link-color;
+  color: black;
   text-decoration: if($link-decoration == none, null, none);
   @include transition($nav-link-transition);
 
   &:hover,
   &:focus {
-    color: $nav-link-hover-color;
+    // color: $nav-link-hover-color;
+    color: rgba(83, 24, 189, 1.00);
     text-decoration: if($link-hover-decoration == underline, none, null);
   }
 
@@ -44,12 +47,13 @@
   .nav-link {
     margin-bottom: -$nav-tabs-border-width;
     background: none;
-    border: $nav-tabs-border-width solid transparent;
-    @include border-top-radius($nav-tabs-border-radius);
+    // border: $nav-tabs-border-width solid transparent;
+    // @include border-top-radius($nav-tabs-border-radius);
 
     &:hover,
     &:focus {
-      border-color: $nav-tabs-link-hover-border-color;
+      color: rgba(83, 24, 189, 1.00);
+      // border-color: $nav-tabs-link-hover-border-color;
       // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
       isolation: isolate;
     }
@@ -63,9 +67,7 @@
 
   .nav-link.active,
   .nav-item.show .nav-link {
-    color: $nav-tabs-link-active-color;
-    background-color: $nav-tabs-link-active-bg;
-    border-color: $nav-tabs-link-active-border-color;
+    color: rgba(83, 24, 189, 1.00);
   }
 
   .dropdown-menu {
@@ -85,13 +87,15 @@
   .nav-link {
     background: none;
     border: 0;
-    @include border-radius($nav-pills-border-radius);
+    // @include border-radius($nav-pills-border-radius);
   }
 
   .nav-link.active,
   .show > .nav-link {
-    color: $nav-pills-link-active-color;
-    @include gradient-bg($nav-pills-link-active-bg);
+    background-color: transparent;
+    color: rgba(83, 24, 189, 1.00);
+    // color: $nav-pills-link-active-color;
+    // @include gradient-bg($nav-pills-link-active-bg);
   }
 }
 

@@ -63,8 +63,8 @@ sub { bottom: -.25em; }
 
 sup { top: -.5em; }
 
-a { color: #0d6efd; text-decoration: underline; }
-a:hover { color: #0a58ca; }
+a { color: #6229c3; text-decoration: underline; }
+a:hover { color: #4e219c; }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover { color: inherit; text-decoration: none; }
 

@@ -11,7 +11,7 @@
   word-wrap: break-word;
   background-color: $card-bg;
   background-clip: border-box;
-  border: $card-border-width solid $card-border-color;
+  border: $card-border-width solid transparent;
   @include border-radius($card-border-radius);
 
   > hr {
@@ -46,7 +46,8 @@
   // Enable `flex-grow: 1` for decks and groups so that card blocks take up
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
-  padding: $card-spacer-y $card-spacer-x;
+  // padding: $card-spacer-y $card-spacer-x;
+  padding: 1rem 1rem;
   color: $card-color;
 }
 
