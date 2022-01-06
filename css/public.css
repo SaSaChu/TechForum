@@ -3071,3 +3071,8 @@ footer .f-img03 { display: inline-block; width: 100%; max-width: 113px; padding-
 .link-l { display: inline-block; color: white; font-size: .9rem; text-decoration: none; margin-bottom: 30px; }
 .link-l:hover { color: white; text-decoration: underline; }
 @media screen and (max-width: 449px) and (min-width: 0) { .link-l { margin-bottom: 7px; } }
+
+.replay { position: fixed; right: 0; bottom: 15%; width: 50px; height: 100px; display: flex; align-items: center; padding: 5px; border: 1px solid red; border-radius: 5px; text-align: center; }
+.replay a { text-decoration: none; }
+
+.grecaptcha-badge { visibility: hidden; }

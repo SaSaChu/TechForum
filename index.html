@@ -381,11 +381,95 @@
           <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
           </div>
         </div>
-
       </div>
     </div>
 
+    <!-- 表單 暫時放這-->
+    <div id="replay-form" class="allBoxs py-5 my-5 px-xl-0 px-5">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h2 class="title">Ask an AI Vision Expert</h2>
+            <script src="//go.adlinktech.com/js/forms2/js/forms2.min.js"></script>
+            <form id="mktoForm_5242" class="truck_form_mktoForm"></form>
+            <span class="google-recaptcha">
+              This site is protected by reCAPTCHA and the Google
+              <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and
+              <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+            </span>
+            <script>
+            try{
+                MktoForms2.loadForm("//app-ab16.marketo.com", "731-NFP-575", 5242);
+                
+                // MktoForms.whenReady for regular landing pages
+                MktoForms2.whenReady(function(form) {
+                  var userConfig = {
+                    apiKeys : {
+                      recaptcha : "6LdBViAaAAAAAB_MxmjubQzgtcx-jAL1f4LWvmYX"
+                    },
+                    fields : {
+                      lastRecaptchaUserInput : "lastRecaptchaUserInput"
+                    },
+                    actions : {
+                      formSubmit : "form"
+                    }
+                  };
 
+            
+                  // reCaptcha Process (no need for adjustment)            
+                  var formEl = form.getFormElem()[0],
+                    submitButtonEl = formEl.querySelector("button[type='submit']"),
+                    recaptchaLib = document.createElement("script");
+                  
+                  form.submittable(false);
+                  form.locked = false;  
+            
+                  var recaptchaListeners = {
+                    ready : function() {
+                    submitButtonEl.disabled = false;
+                    }
+                  };
+                  
+                  Object.keys(recaptchaListeners).forEach(function globalize(fnName){
+                    window["grecaptchaListeners_" + fnName] = recaptchaListeners[fnName];
+                  });
+            
+                  form.onValidate(function(native) {
+                    if (!native) return;
+                    
+                    grecaptcha.ready(function() {
+                    grecaptcha.execute(userConfig.apiKeys.recaptcha, {
+                      action: userConfig.actions.formSubmit
+                    })
+                    .then(function(lastRecaptchaUserInput) {
+                      var mktoFields = {};
+                      if (form.locked == false) {
+                        console.log("primary captcha result resolved");
+                        form.locked = true;  
+                        mktoFields[userConfig.fields.lastRecaptchaUserInput] = lastRecaptchaUserInput;
+                        form.addHiddenFields(mktoFields);        
+                        form.submittable(true);
+                        form.submit();
+                      } else {
+                        console.log("secondary captcha result resolved");          
+                      }
+                    });
+                    });
+                  });
+                  
+                  recaptchaLib.src = "https://www.google.com/recaptcha/api.js?render=" + userConfig.apiKeys.recaptcha + "&onload=grecaptchaListeners_ready";
+                  document.head.appendChild(recaptchaLib);
+                });
+              }catch(err) {	   
+                
+              }
+            </script>
+        </div>
+    </div>
+    
+    <!-- 觀看重播 -->
+    <div class="replay">
+			<a href="#replay-form">觀看重播</a>
+		</div>
+      
     <footer>
       <div class="container allBoxs">
         <div class="row">
