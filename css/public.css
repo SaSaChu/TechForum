@@ -3041,7 +3041,7 @@ body { position: relative; display: inline-block; width: 100%; height: 100%; mar
 
 .fixbutton { display: inline-block; width: 60px; height: 110px; background-color: red; color: white; }
 
-@media screen and (max-width: 449px) and (min-width: 0) { .nav-link { padding: .5rem; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .nav-link { padding: .4rem; } }
 
 .kv-boxs { display: inline-block; width: 100%; min-height: 810px; margin: 0; padding: 0; background: #000 url(../img/banner.png) center right no-repeat; -moz-background-size: cover; background-size: cover; }
 @media screen and (max-width: 449px) and (min-width: 0) { .kv-boxs { background: #000 url(../img/mobile_bg.png) center 33px no-repeat; -moz-background-size: contain; background-size: contain; min-height: auto; } }
@@ -3091,11 +3091,17 @@ footer .f-img03 { display: inline-block; width: 100%; max-width: 113px; padding-
 .link-l:hover { color: white; text-decoration: underline; }
 @media screen and (max-width: 449px) and (min-width: 0) { .link-l { margin-bottom: 7px; } }
 
-.replay { position: fixed; right: 15px; bottom: 2%; width: 60px; height: 110px; display: flex; align-items: center; padding: 5px; border-radius: 5px; text-align: center; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#352bd9+0,7c31df+100 */ background: #352bd9; /* Old browsers */ background: -moz-linear-gradient(top, #352bd9 0%, #7c31df 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #352bd9 0%, #7c31df 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #352bd9 0%, #7c31df 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#352bd9', endColorstr='#7c31df',GradientType=0 ); /* IE6-9 */ }
-.replay.en { width: 105px; height: 105px; flex-direction: column; }
+.enTitle { display: inline-block; font-size: 1.4rem; font-weight: bolder; }
+
+.replay { position: fixed; z-index: 999; right: 15px; bottom: 2%; width: 60px; height: 110px; display: flex; align-items: center; padding: 5px; border-radius: 5px; text-align: center; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#352bd9+0,7c31df+100 */ background: #352bd9; /* Old browsers */ background: -moz-linear-gradient(top, #352bd9 0%, #7c31df 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #352bd9 0%, #7c31df 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #352bd9 0%, #7c31df 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#352bd9', endColorstr='#7c31df',GradientType=0 ); /* IE6-9 */ flex-direction: column; }
+@media screen and (max-width: 449px) and (min-width: 0) { .replay { width: 55px; height: 100px; } }
+.replay.en { width: 90px; height: 100px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .replay.en { width: 75px; height: 95px; } }
 .replay.en a { font-size: .9rem; }
+@media screen and (max-width: 449px) and (min-width: 0) { .replay.en a { font-size: .7rem; } }
 .replay.en a .icon { font-size: 2rem; display: block; }
 .replay a { font-size: 1.2rem; color: white; text-decoration: none; }
-.replay a .icon { font-size: 2rem; width: 100%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .replay a { font-size: .9rem; } }
+.replay a .icon { font-size: 2rem; display: block; }
 
 .grecaptcha-badge { visibility: hidden; }
