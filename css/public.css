@@ -3108,4 +3108,30 @@ footer .f-img03 { display: inline-block; width: 100%; max-width: 113px; padding-
 @media screen and (max-width: 449px) and (min-width: 0) { .replay a { font-size: .9rem; } }
 .replay a .icon { font-size: 2rem; display: block; }
 
+.replay-form { display: flex; flex-direction: column; justify-content: flex-start; align-items: center; flex-wrap: wrap; margin: 0 auto; width: 100% !important; height: 300px; }
+.replay-form.form_en { height: 320px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .replay-form { padding: 0 10px; width: 100% !important; flex-wrap: nowrap; height: auto; } }
+@media screen and (max-width: 450px) and (min-width: 0) and (max-width: 450px) and (min-width: 0) { .replay-form:first-child { display: flex; } }
+
+.replay-form .mktoFormRow { width: 50%; margin-right: 20px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .replay-form .mktoFormRow { margin-right: 0; width: 100%; } }
+.replay-form .mktoFormRow:nth-last-child(4) { display: flex; align-items: center; }
+.replay-form .mktoFormRow:nth-last-child(4) .mktoFieldDescriptor { width: auto; }
+.replay-form .mktoFormRow:nth-last-child(4) .mktoFieldDescriptor .mktoFieldWrap { display: flex; align-items: center; width: auto; }
+.replay-form .mktoFormRow:nth-last-child(4) .mktoFieldDescriptor .mktoFieldWrap .mktoLabel { padding-top: 0; }
+.replay-form .mktoFormRow .mktoFieldDescriptor { width: 100%; }
+.replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap { display: flex; align-items: center; width: 100%; }
+@media screen and (max-width: 450px) and (min-width: 0) { .replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap { flex-direction: column; align-items: flex-start; } }
+.replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap .mktoLabel { width: 20% !important; }
+@media screen and (max-width: 450px) and (min-width: 0) { .replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap .mktoLabel { width: 100% !important; } }
+.replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap .mktoLogicalField { width: 70% !important; }
+@media screen and (max-width: 450px) and (min-width: 0) { .replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap .mktoLogicalField { width: 100% !important; } }
+.replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap input[type='text'], .replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap input[type='email'], .replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap input[type='tel'], .replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap select { width: 65% !important; }
+@media screen and (max-width: 450px) and (min-width: 0) { .replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap input[type='text'], .replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap input[type='email'], .replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap input[type='tel'], .replay-form .mktoFormRow .mktoFieldDescriptor > .mktoFieldWrap select { width: 100% !important; } }
+.replay-form .mktoFormRow .mktoFormCol .mktoHtmlText a { color: #333333; text-decoration: underline; }
+@media screen and (max-width: 450px) and (min-width: 0) { .replay-form .mktoButtonRow .mktoButtonWrap { margin-left: 0 !important; } }
+
+.google-recaptcha { font-size: 12px; color: #333333; }
+.google-recaptcha > a { color: #333333; }
+
 .grecaptcha-badge { visibility: hidden; }
