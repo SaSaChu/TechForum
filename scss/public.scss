@@ -398,10 +398,10 @@ footer {
   flex-wrap: wrap;
   margin: 0 auto;
   width: 100% !important;
-  height: 300px;
+  height: 230px;
 
   &.form_en {
-    height: 320px;
+    height: 265px;
   }
 
   @include range-width(0, 451px) {
@@ -484,6 +484,7 @@ footer {
 
     .mktoFormCol {
       .mktoHtmlText {
+        font-size: 16px;
         a {
           color:rgb(51, 51, 51);
           text-decoration: underline;
@@ -493,6 +494,7 @@ footer {
   }
 
   .mktoButtonRow {
+    align-self: baseline;
     .mktoButtonWrap {
       @include range-width(0, 451px) {
         margin-left: 0 !important;
@@ -501,7 +503,7 @@ footer {
   }
 }
 .google-recaptcha {
-  font-size: 12px;
+  font-size: 16px;
   color: rgb(51, 51, 51);
   > a {
     color: rgb(51, 51, 51);
