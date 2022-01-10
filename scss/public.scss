@@ -402,11 +402,6 @@ footer {
 
   &.form_en {
     height: 265px;
-    .mktoFormRow {
-      &:nth-last-child(4) {
-        margin: 0;
-      }
-    }
   }
 
   @include range-width(0, 451px) {
